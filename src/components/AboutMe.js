@@ -3,11 +3,37 @@ import girlImg from "../assets/girl-illustration.svg";
 
 function AboutMe() {
   return (
-    <div>
-      <h1>Hi, I'm Fernanda Veiga</h1>
-      <p>Front-End Developer</p>
-      <a>View my projects</a>
-      <img src={girlImg} alt="" />
+    <div className="AboutMe">
+      <div className="AboutMe-left">
+        <h1>Hi, I'm Fernanda Veiga</h1>
+        <p>Front-End Developer</p>
+        <span className="AboutMe-personal-links">
+          <a
+            className="linkedin-link"
+            aria-label="Link to linkedin"
+            href="https://www.linkedin.com/in/fernandarochaveiga/"
+            target="_blank"
+          ></a>
+          <a
+            className="github-link"
+            aria-label="Link to Github"
+            href="https://github.com/fernanda-veiga"
+            target="_blank"
+          ></a>
+          <a
+            className="resume-link"
+            aria-label="Link to resume"
+            href="https://drive.google.com/file/d/14LSk-xcg_-7YJr84TgkuR04CQI3s5hGj/view?usp=sharing"
+            target="_blank"
+          ></a>
+        </span>
+        <a className="AboutMe-projects-link" href="#">
+          View my projects
+        </a>
+      </div>
+      <div className="AboutMe-right">
+        <img src={girlImg} alt="" />
+      </div>
     </div>
   );
 }

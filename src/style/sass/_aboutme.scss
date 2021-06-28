@@ -1,0 +1,118 @@
+@use 'vars';
+
+.AboutMe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  width: 100vw;
+  height: 100vh;
+  padding: calc(#{vars.$navBarHeight} + 15px) 25px 15px 25px;
+
+  font-family: vars.$poppins;
+  color: vars.$black;
+
+  background-color: vars.$backgroundColor;
+
+  .AboutMe-left {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 3em;
+    }
+
+    p {
+      font-size: 1.5em;
+
+      margin-bottom: 15px;
+    }
+
+    .AboutMe-personal-links {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 50px;
+
+      .linkedin-link,
+      .github-link,
+      .resume-link {
+        font-size: 1.8em;
+        color: vars.$lightBlue;
+        text-decoration: none;
+
+        &:hover {
+          cursor: pointer;
+
+          &::after {
+            color: vars.$blue;
+          }
+        }
+      }
+
+      .linkedin-link,
+      .github-link {
+        &::after {
+          font-family: vars.$fontAwesomeBrands;
+          font-weight: 400;
+        }
+      }
+
+      .linkedin-link {
+        &::after {
+          content: vars.$unicodeLinkedin;
+        }
+      }
+
+      .github-link {
+        &::after {
+          content: vars.$unicodeGithub;
+        }
+      }
+
+      .resume-link {
+        &::after {
+          font-family: vars.$fontAwesomeFree;
+          font-weight: 600;
+
+          content: vars.$unicodePDF;
+        }
+      }
+    }
+
+    .AboutMe-projects-link {
+      width: fit-content;
+      padding: 12px;
+
+      font-size: 1.5em;
+      font-weight: 600;
+      color: vars.$white;
+      text-decoration: none;
+
+      background-color: vars.$darkPink;
+      border-radius: 8px;
+
+      &::after {
+        margin-left: 10px;
+
+        font-family: vars.$fontAwesomeFree;
+        font-weight: 600;
+        color: vars.$white;
+
+        content: vars.$unicodeArrowRight;
+      }
+
+      &:hover {
+        background-color: vars.$darkerPink;
+
+        cursor: pointer;
+      }
+    }
+  }
+
+  .AboutMe-right {
+    img {
+      width: auto;
+      height: 60vh;
+    }
+  }
+}
