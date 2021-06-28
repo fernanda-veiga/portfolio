@@ -1,3 +1,128 @@
+@charset "UTF-8";
+/*===FONTS===*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+/*===COLORS===*/
+/*===SIZE===*/
+/*===FLEXBOX===*/
+/*===POSITION===*/
+.NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 80px;
+  padding: 15px 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #0d1117;
+  background-color: #fff4eb;
+}
+.NavBar .NavBar-right ul {
+  display: flex;
+  gap: 20px;
+}
+.NavBar .NavBar-right ul li a:hover {
+  color: #7a7fdd;
+  cursor: pointer;
+}
 
+.AboutMe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  width: 100vw;
+  height: 100vh;
+  padding: calc(80px + 15px) 25px 15px 25px;
+  font-family: "Poppins", sans-serif;
+  color: #0d1117;
+  background-color: #fff4eb;
+}
+.AboutMe .AboutMe-left {
+  display: flex;
+  flex-direction: column;
+}
+.AboutMe .AboutMe-left h1 {
+  font-size: 3em;
+}
+.AboutMe .AboutMe-left p {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+.AboutMe .AboutMe-left .AboutMe-personal-links {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.AboutMe .AboutMe-left .AboutMe-personal-links .linkedin-link,
+.AboutMe .AboutMe-left .AboutMe-personal-links .github-link,
+.AboutMe .AboutMe-left .AboutMe-personal-links .resume-link {
+  font-size: 1.8em;
+  color: #7a7fdd;
+  text-decoration: none;
+}
+.AboutMe .AboutMe-left .AboutMe-personal-links .linkedin-link:hover,
+.AboutMe .AboutMe-left .AboutMe-personal-links .github-link:hover,
+.AboutMe .AboutMe-left .AboutMe-personal-links .resume-link:hover {
+  cursor: pointer;
+}
+.AboutMe .AboutMe-left .AboutMe-personal-links .linkedin-link:hover::after,
+.AboutMe .AboutMe-left .AboutMe-personal-links .github-link:hover::after,
+.AboutMe .AboutMe-left .AboutMe-personal-links .resume-link:hover::after {
+  color: #4e53ba;
+}
+.AboutMe .AboutMe-left .AboutMe-personal-links .linkedin-link::after,
+.AboutMe .AboutMe-left .AboutMe-personal-links .github-link::after {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}
+.AboutMe .AboutMe-left .AboutMe-personal-links .linkedin-link::after {
+  content: "";
+}
+.AboutMe .AboutMe-left .AboutMe-personal-links .github-link::after {
+  content: "";
+}
+.AboutMe .AboutMe-left .AboutMe-personal-links .resume-link::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "";
+}
+.AboutMe .AboutMe-left .AboutMe-projects-link {
+  width: fit-content;
+  padding: 12px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ff8a91;
+  border-radius: 8px;
+}
+.AboutMe .AboutMe-left .AboutMe-projects-link::after {
+  margin-left: 10px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  color: #ffffff;
+  content: "";
+}
+.AboutMe .AboutMe-left .AboutMe-projects-link:hover {
+  background-color: #ff5856;
+  cursor: pointer;
+}
+.AboutMe .AboutMe-right img {
+  width: auto;
+  height: 60vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
 
 /*# sourceMappingURL=App.css.map */
