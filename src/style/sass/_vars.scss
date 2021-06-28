@@ -1,0 +1,48 @@
+/*===FONTS===*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+$poppins: "Poppins", sans-serif;
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+$fontAwesomeFree: "Font Awesome 5 Free";
+$fontAwesomeBrands: "Font Awesome 5 Brands";
+$unicodeArrowRight: "\f061";
+$unicodeGithub: "\f09b";
+$unicodeLinkedin: "\f08c";
+$unicodePDF: "\f1c1";
+
+/*===COLORS===*/
+$white: #ffffff;
+$black: #0d1117;
+$brown: #ebdbcd;
+$darkBrown: #bfa990;
+$pink: #ffadb2;
+$darkPink: #ff8a91;
+$darkerPink: #ff5856;
+$lightBlue: #7a7fdd;
+$blue: #4e53ba;
+$darkBlue: #2b31ba;
+
+$backgroundColor: #fff4eb;
+
+/*===SIZE===*/
+$navBarHeight: 80px;
+
+/*===FLEXBOX===*/
+@mixin flexSpaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*===POSITION===*/
+@mixin positionFixedOnTop {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
