@@ -2,13 +2,27 @@ import React from "react";
 
 function NavBar() {
   return (
-    <div className="NavBar">
-      <p>Fernanda Veiga</p>
-      <a>Home</a>
-      <a>Skills</a>
-      <a>Projects</a>
-      <a>Contact</a>
-    </div>
+    <header className="NavBar">
+      <div className="NavBar-left">
+        <p>Fernanda Veiga</p>
+      </div>
+      <div className="NavBar-right">
+        <ul>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a>Skills</a>
+          </li>
+          <li>
+            <a>Projects</a>
+          </li>
+          <li>
+            <a>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
   );
 }
 

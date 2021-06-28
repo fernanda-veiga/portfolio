@@ -1,0 +1,36 @@
+@use 'vars';
+
+.NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: vars.$navBarHeight;
+  padding: 15px 25px;
+
+  font-family: vars.$poppins;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: vars.$black;
+
+  background-color: vars.$backgroundColor;
+
+  .NavBar-right {
+    ul {
+      display: flex;
+      gap: 20px;
+
+      li a {
+        &:hover {
+          color: vars.$lightBlue;
+
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
