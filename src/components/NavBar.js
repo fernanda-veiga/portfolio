@@ -1,24 +1,52 @@
 import React from "react";
 
-function NavBar() {
+function NavBar(props) {
   return (
-    <header className="NavBar">
+    <header
+      className="NavBar"
+      style={
+        props.isTopOfPage
+          ? { color: "#0d1117", backgroundColor: "#ffffff" }
+          : {
+              color: "#ffffff",
+              backgroundColor: "#4e53ba",
+            }
+      }
+    >
       <div className="NavBar-left">
         <p>Fernanda Veiga</p>
       </div>
       <div className="NavBar-right">
         <ul>
           <li>
-            <a>Home</a>
+            <a
+              href="#home"
+              style={
+                props.isTopOfPage ? { color: "#0d1117" } : { color: "#ffffff" }
+              }
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a>Skills</a>
+            <a
+              href="#projects"
+              style={
+                props.isTopOfPage ? { color: "#0d1117" } : { color: "#ffffff" }
+              }
+            >
+              Projects
+            </a>
           </li>
           <li>
-            <a>Projects</a>
-          </li>
-          <li>
-            <a>Contact</a>
+            <a
+              href="#"
+              style={
+                props.isTopOfPage ? { color: "#0d1117" } : { color: "#ffffff" }
+              }
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>
