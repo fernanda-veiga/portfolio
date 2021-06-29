@@ -1,0 +1,96 @@
+@use 'vars';
+
+.Projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px 25px;
+
+  font-family: vars.$poppins;
+  color: vars.$black;
+
+  background-color: vars.$backgroundColor;
+
+  h1 {
+    margin-bottom: 50px;
+
+    font-size: 3em;
+    color: vars.$darkerPink;
+  }
+
+  .Projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .Project {
+      position: relative;
+
+      .Project-image {
+        width: 30vw;
+        object-fit: cover;
+      }
+
+      .Project-description {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: 0;
+
+        transition: all 0.3s ease-in;
+
+        .Project-title {
+          font-weight: 600;
+          color: vars.$black;
+        }
+
+        .Project-skills {
+          font-size: 1.2em;
+          color: vars.$darkBlue;
+        }
+
+        .Project-links {
+          display: flex;
+          gap: 15px;
+
+          a {
+            padding: 8px;
+
+            font-size: 1.2em;
+            color: vars.$black;
+            text-decoration: none;
+
+            background-color: none;
+            border: solid 2px vars.$blue;
+            border-radius: 8px;
+
+            transition: all 0.2s ease-in;
+
+            &:hover {
+              color: vars.$white;
+
+              background-color: vars.$blue;
+
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      &:hover .Project-description {
+        opacity: 1;
+      }
+    }
+  }
+}
