@@ -1,5 +1,5 @@
 import React from "react";
-import placeholderWebsiteImg from "../assets/placeholder-website.png";
+import placeholderWebsiteImg from "../assets/projects/placeholder-website.png";
 import wheresWaldoImg from "../assets/projects/wheres-waldo.png";
 import battleshipImg from "../assets/projects/battleship.png";
 import memoryGameImg from "../assets/projects/memory-game.png";
@@ -33,8 +33,14 @@ function Project(props) {
 
 function Projects() {
   return (
-    <div className="Projects">
-      <h1>Projects</h1>
+    <div className="Projects" id="projects">
+      <h1>PROJECTS</h1>
+      <p className="Projects-github-link">
+        More projects available at my{" "}
+        <a href="https://github.com/fernanda-veiga" target="_blank">
+          Github
+        </a>
+      </p>
       <div className="Projects-container">
         <Project
           finished={false}
