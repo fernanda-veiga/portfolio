@@ -3,7 +3,7 @@ import girlImg from "../assets/girl-illustration.svg";
 
 function AboutMe() {
   return (
-    <div className="AboutMe">
+    <div className="AboutMe" id="home">
       <div className="AboutMe-left">
         <h1>Hi, I'm Fernanda Veiga</h1>
         <p>Front-End Developer</p>
@@ -27,7 +27,7 @@ function AboutMe() {
             target="_blank"
           ></a>
         </span>
-        <a className="AboutMe-projects-link" href="#">
+        <a className="AboutMe-projects-link" href="#projects">
           View my projects
         </a>
       </div>
