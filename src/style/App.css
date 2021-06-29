@@ -22,6 +22,22 @@
   background-color: #ffffff;
   transition: all 0.3s ease-in;
 }
+@media (max-width: 450px) {
+  .NavBar {
+    justify-content: center;
+  }
+}
+@media (max-width: 300px) {
+  .NavBar {
+    height: 70px;
+    font-size: 1em;
+  }
+}
+@media (max-width: 450px) {
+  .NavBar .NavBar-left {
+    display: none;
+  }
+}
 .NavBar .NavBar-right ul {
   display: flex;
   gap: 30px;
@@ -38,29 +54,70 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 80px;
   width: 100vw;
-  height: 100vh;
-  padding: calc(80px + 15px) 25px 15px 25px;
+  padding: calc(80px + 25px) 10vw 15px 10vw;
   font-family: "Poppins", sans-serif;
   color: #0d1117;
   background-color: #ffffff;
+}
+@media (max-width: 600px) {
+  .AboutMe {
+    flex-direction: column-reverse;
+    gap: 40px;
+    height: auto;
+  }
 }
 .AboutMe .AboutMe-left {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 600px) {
+  .AboutMe .AboutMe-left {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .AboutMe .AboutMe-left {
+    align-items: center;
+  }
+}
 .AboutMe .AboutMe-left h1 {
   font-size: 3em;
 }
+@media (max-width: 600px) {
+  .AboutMe .AboutMe-left h1 {
+    margin-bottom: 15px;
+    font-size: 2em;
+    text-align: center;
+  }
+}
+@media (max-width: 300px) {
+  .AboutMe .AboutMe-left h1 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+}
 .AboutMe .AboutMe-left p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-bottom: 15px;
+}
+@media (max-width: 300px) {
+  .AboutMe .AboutMe-left p {
+    font-size: 1em;
+  }
 }
 .AboutMe .AboutMe-left .AboutMe-personal-links {
   display: flex;
   gap: 10px;
   margin-bottom: 50px;
+}
+@media (max-width: 600px) {
+  .AboutMe .AboutMe-left .AboutMe-personal-links {
+    margin-bottom: 15px;
+    justify-content: center;
+  }
 }
 .AboutMe .AboutMe-left .AboutMe-personal-links .linkedin-link,
 .AboutMe .AboutMe-left .AboutMe-personal-links .github-link,
@@ -68,6 +125,13 @@
   font-size: 1.8em;
   color: #7a7fdd;
   text-decoration: none;
+}
+@media (max-width: 300px) {
+  .AboutMe .AboutMe-left .AboutMe-personal-links .linkedin-link,
+.AboutMe .AboutMe-left .AboutMe-personal-links .github-link,
+.AboutMe .AboutMe-left .AboutMe-personal-links .resume-link {
+    font-size: 1.5em;
+  }
 }
 .AboutMe .AboutMe-left .AboutMe-personal-links .linkedin-link:hover,
 .AboutMe .AboutMe-left .AboutMe-personal-links .github-link:hover,
@@ -105,6 +169,18 @@
   background-color: #ff8a91;
   border-radius: 8px;
 }
+@media (max-width: 600px) {
+  .AboutMe .AboutMe-left .AboutMe-projects-link {
+    padding: 8px;
+    font-size: 1.2em;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 300px) {
+  .AboutMe .AboutMe-left .AboutMe-projects-link {
+    font-size: 1em;
+  }
+}
 .AboutMe .AboutMe-left .AboutMe-projects-link::after {
   margin-left: 10px;
   font-family: "Font Awesome 5 Free";
@@ -116,19 +192,40 @@
   background-color: #ff5856;
   cursor: pointer;
 }
+.AboutMe .AboutMe-right {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .AboutMe .AboutMe-right {
+    width: 50%;
+    text-align: end;
+  }
+}
 .AboutMe .AboutMe-right img {
-  width: auto;
-  height: 60vh;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 450px) {
+  .AboutMe .AboutMe-right img {
+    max-width: 330px;
+  }
 }
 
 .Projects {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
   padding: calc(80px + 15px) 25px calc(80px + 15px) 25px;
   font-family: "Poppins", sans-serif;
   color: #0d1117;
   background-color: #ffffff;
+}
+@media (max-width: 600px) {
+  .Projects {
+    padding: 50px 25px 30px 25px;
+  }
 }
 .Projects h1 {
   margin-bottom: 50px;
@@ -136,10 +233,34 @@
   color: #4e53ba;
   border-bottom: solid 5px #4e53ba;
 }
+@media (max-width: 600px) {
+  .Projects h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    border-bottom: solid 4px #4e53ba;
+  }
+}
+@media (max-width: 300px) {
+  .Projects h1 {
+    font-size: 1.5em;
+  }
+}
 .Projects .Projects-github-link {
   margin-bottom: 80px;
   font-size: 1.5em;
   color: #0d1117;
+}
+@media (max-width: 600px) {
+  .Projects .Projects-github-link {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+}
+@media (max-width: 300px) {
+  .Projects .Projects-github-link {
+    font-size: 1em;
+  }
 }
 .Projects .Projects-github-link a {
   color: #4e53ba;
@@ -157,11 +278,21 @@
   height: 300px;
   box-shadow: 0 0 5px lightgrey;
 }
+@media (max-width: 600px) {
+  .Projects .Projects-container .Project {
+    width: 100%;
+  }
+}
 .Projects .Projects-container .Project .Project-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center top;
+}
+@media (max-width: 450px) {
+  .Projects .Projects-container .Project .Project-image {
+    object-position: center center;
+  }
 }
 .Projects .Projects-container .Project .Project-description {
   position: absolute;
@@ -213,20 +344,36 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
   padding: 40px 25px;
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   background-color: #4e53ba;
+}
+@media (max-width: 600px) {
+  .Footer {
+    padding: 25px 25px;
+  }
 }
 .Footer h1 {
   margin-bottom: 20px;
   font-size: 2.5em;
   border-bottom: solid 4px #ffffff;
 }
+@media (max-width: 600px) {
+  .Footer h1 {
+    display: none;
+  }
+}
 .Footer .Footer-personal-links {
   display: flex;
   gap: 30px;
   margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .Footer .Footer-personal-links {
+    margin-bottom: 10px;
+  }
 }
 .Footer .Footer-personal-links .Footer-linkedin-link,
 .Footer .Footer-personal-links .Footer-github-link,
@@ -234,6 +381,13 @@
   font-size: 3em;
   color: #ffffff;
   text-decoration: none;
+}
+@media (max-width: 450px) {
+  .Footer .Footer-personal-links .Footer-linkedin-link,
+.Footer .Footer-personal-links .Footer-github-link,
+.Footer .Footer-personal-links .Footer-resume-link {
+    font-size: 2em;
+  }
 }
 .Footer .Footer-personal-links .Footer-linkedin-link:hover,
 .Footer .Footer-personal-links .Footer-github-link:hover,
@@ -265,6 +419,11 @@
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
+}
+
+.App {
+  width: 100vw;
+  background-color: mediumaquamarine;
 }
 
 /*# sourceMappingURL=App.css.map */

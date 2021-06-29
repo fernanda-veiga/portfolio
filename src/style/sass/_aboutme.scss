@@ -4,28 +4,60 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 80px;
   width: 100vw;
-  height: 100vh;
-  padding: calc(#{vars.$navBarHeight} + 15px) 25px 15px 25px;
+  padding: calc(#{vars.$navBarHeight} + 25px) 10vw 15px 10vw;
 
   font-family: vars.$poppins;
   color: vars.$black;
 
   background-color: vars.$backgroundColor;
 
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+    gap: 40px;
+
+    height: auto;
+  }
+
   .AboutMe-left {
     display: flex;
     flex-direction: column;
 
+    @media (min-width: 600px) {
+      width: 50%;
+    }
+
+    @media (max-width: 600px) {
+      align-items: center;
+    }
+
     h1 {
       font-size: 3em;
+
+      @media (max-width: 600px) {
+        margin-bottom: 15px;
+
+        font-size: 2em;
+        text-align: center;
+      }
+
+      @media (max-width: 300px) {
+        margin-bottom: 15px;
+
+        font-size: 1.2em;
+        text-align: center;
+      }
     }
 
     p {
-      font-size: 1.5em;
+      font-size: 1.2em;
 
       margin-bottom: 15px;
+
+      @media (max-width: 300px) {
+        font-size: 1em;
+      }
     }
 
     .AboutMe-personal-links {
@@ -33,12 +65,22 @@
       gap: 10px;
       margin-bottom: 50px;
 
+      @media (max-width: 600px) {
+        margin-bottom: 15px;
+
+        justify-content: center;
+      }
+
       .linkedin-link,
       .github-link,
       .resume-link {
         font-size: 1.8em;
         color: vars.$lightBlue;
         text-decoration: none;
+
+        @media (max-width: 300px) {
+          font-size: 1.5em;
+        }
 
         &:hover {
           cursor: pointer;
@@ -91,6 +133,18 @@
       background-color: vars.$darkPink;
       border-radius: 8px;
 
+      @media (max-width: 600px) {
+        padding: 8px;
+
+        font-size: 1.2em;
+
+        border-radius: 5px;
+      }
+
+      @media (max-width: 300px) {
+        font-size: 1em;
+      }
+
       &::after {
         margin-left: 10px;
 
@@ -110,9 +164,23 @@
   }
 
   .AboutMe-right {
+    width: 100%;
+
+    text-align: center;
+
+    @media (min-width: 600px) {
+      width: 50%;
+
+      text-align: end;
+    }
+
     img {
-      width: auto;
-      height: 60vh;
+      width: 100%;
+      height: auto;
+
+      @media (max-width: 450px) {
+        max-width: 330px;
+      }
     }
   }
 }
