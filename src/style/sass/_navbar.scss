@@ -4,6 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
 
   display: flex;
   align-items: center;
@@ -19,14 +20,18 @@
 
   background-color: vars.$backgroundColor;
 
+  transition: all 0.3s ease-in;
+
   .NavBar-right {
     ul {
       display: flex;
-      gap: 20px;
+      gap: 30px;
 
       li a {
+        text-decoration: none;
+
         &:hover {
-          color: vars.$lightBlue;
+          border-bottom: solid 2px;
 
           cursor: pointer;
         }
