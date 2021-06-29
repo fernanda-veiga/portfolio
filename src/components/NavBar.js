@@ -40,7 +40,7 @@ function NavBar(props) {
           </li>
           <li>
             <a
-              href="#"
+              href="#contact"
               style={
                 props.isTopOfPage ? { color: "#0d1117" } : { color: "#ffffff" }
               }

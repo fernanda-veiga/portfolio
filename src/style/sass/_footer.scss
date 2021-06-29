@@ -1,0 +1,67 @@
+@use 'vars';
+
+.Footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 25px;
+
+  font-family: vars.$poppins;
+  color: vars.$white;
+
+  background-color: vars.$blue;
+
+  h1 {
+    margin-bottom: 20px;
+
+    font-size: 2.5em;
+
+    border-bottom: solid 4px vars.$white;
+  }
+
+  .Footer-personal-links {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+
+    .Footer-linkedin-link,
+    .Footer-github-link,
+    .Footer-resume-link {
+      font-size: 3em;
+      color: vars.$white;
+      text-decoration: none;
+
+      &:hover {
+        cursor: pointer;
+
+        &::after {
+          color: vars.$lightBlue;
+        }
+      }
+    }
+
+    .Footer-linkedin-link,
+    .Footer-github-link {
+      &::after {
+        font-family: vars.$fontAwesomeBrands;
+        font-weight: 400;
+      }
+    }
+
+    .Footer-linkedin-link {
+      &::after {
+        content: vars.$unicodeLinkedin;
+      }
+    }
+
+    .Footer-github-link {
+      &::after {
+        content: vars.$unicodeGithub;
+      }
+    }
+  }
+
+  p {
+    color: vars.$lightBlue;
+  }
+}

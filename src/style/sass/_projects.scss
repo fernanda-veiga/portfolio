@@ -4,7 +4,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: calc(#{vars.$navBarHeight} + 15px) 25px 15px 25px;
+  padding: calc(#{vars.$navBarHeight} + 15px) 25px
+    calc(#{vars.$navBarHeight} + 15px) 25px;
 
   font-family: vars.$poppins;
   color: vars.$black;

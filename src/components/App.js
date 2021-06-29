@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
+import Footer from "./Footer";
 import "../style/App.css";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <NavBar isTopOfPage={isTopOfPage} />
       <AboutMe />
       <Projects />
+      <Footer />
     </div>
   );
 }

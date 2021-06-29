@@ -125,7 +125,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: calc(80px + 15px) 25px 15px 25px;
+  padding: calc(80px + 15px) 25px calc(80px + 15px) 25px;
   font-family: "Poppins", sans-serif;
   color: #0d1117;
   background-color: #ffffff;
@@ -207,6 +207,57 @@
 }
 .Projects .Projects-container .Project:hover .Project-description {
   opacity: 1;
+}
+
+.Footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 25px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  background-color: #4e53ba;
+}
+.Footer h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  border-bottom: solid 4px #ffffff;
+}
+.Footer .Footer-personal-links {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.Footer .Footer-personal-links .Footer-linkedin-link,
+.Footer .Footer-personal-links .Footer-github-link,
+.Footer .Footer-personal-links .Footer-resume-link {
+  font-size: 3em;
+  color: #ffffff;
+  text-decoration: none;
+}
+.Footer .Footer-personal-links .Footer-linkedin-link:hover,
+.Footer .Footer-personal-links .Footer-github-link:hover,
+.Footer .Footer-personal-links .Footer-resume-link:hover {
+  cursor: pointer;
+}
+.Footer .Footer-personal-links .Footer-linkedin-link:hover::after,
+.Footer .Footer-personal-links .Footer-github-link:hover::after,
+.Footer .Footer-personal-links .Footer-resume-link:hover::after {
+  color: #7a7fdd;
+}
+.Footer .Footer-personal-links .Footer-linkedin-link::after,
+.Footer .Footer-personal-links .Footer-github-link::after {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}
+.Footer .Footer-personal-links .Footer-linkedin-link::after {
+  content: "";
+}
+.Footer .Footer-personal-links .Footer-github-link::after {
+  content: "";
+}
+.Footer p {
+  color: #7a7fdd;
 }
 
 * {
