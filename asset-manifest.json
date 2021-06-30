@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3f20abb5.chunk.css",
+    "main.js": "/static/js/main.05f2c908.chunk.js",
+    "main.js.map": "/static/js/main.05f2c908.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b83279d6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b83279d6.js.map",
+    "static/js/2.83157a91.chunk.js": "/static/js/2.83157a91.chunk.js",
+    "static/js/2.83157a91.chunk.js.map": "/static/js/2.83157a91.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.3f20abb5.chunk.css.map": "/static/css/main.3f20abb5.chunk.css.map",
+    "static/js/2.83157a91.chunk.js.LICENSE.txt": "/static/js/2.83157a91.chunk.js.LICENSE.txt",
+    "static/media/battleship.7ded1bd4.png": "/static/media/battleship.7ded1bd4.png",
+    "static/media/calculator.0e667d9f.png": "/static/media/calculator.0e667d9f.png",
+    "static/media/girl-illustration.dee6ebae.svg": "/static/media/girl-illustration.dee6ebae.svg",
+    "static/media/library-app.1e124ded.png": "/static/media/library-app.1e124ded.png",
+    "static/media/memory-game.2346fabb.png": "/static/media/memory-game.2346fabb.png",
+    "static/media/placeholder-website.62570c91.png": "/static/media/placeholder-website.62570c91.png",
+    "static/media/tic-tac-toe.194f49e7.png": "/static/media/tic-tac-toe.194f49e7.png",
+    "static/media/to-do-list-app.ee3117c8.png": "/static/media/to-do-list-app.ee3117c8.png",
+    "static/media/weather-app.8a9649b5.png": "/static/media/weather-app.8a9649b5.png",
+    "static/media/wheres-waldo.32086cd8.png": "/static/media/wheres-waldo.32086cd8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b83279d6.js",
+    "static/js/2.83157a91.chunk.js",
+    "static/css/main.3f20abb5.chunk.css",
+    "static/js/main.05f2c908.chunk.js"
+  ]
+}
