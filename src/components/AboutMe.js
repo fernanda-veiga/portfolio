@@ -20,12 +20,6 @@ function AboutMe() {
             href="https://github.com/fernanda-veiga"
             target="_blank"
           ></a>
-          <a
-            className="resume-link"
-            aria-label="Link to resume"
-            href="https://drive.google.com/file/d/14LSk-xcg_-7YJr84TgkuR04CQI3s5hGj/view?usp=sharing"
-            target="_blank"
-          ></a>
         </span>
         <a className="AboutMe-projects-link" href="#projects">
           View my projects
